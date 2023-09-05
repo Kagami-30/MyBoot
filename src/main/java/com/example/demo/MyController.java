@@ -44,6 +44,7 @@ public ModelAndView form(
 		repository.saveAndFlush(person);
 		res = new ModelAndView("redirect:/");
 	}else {
+		
 		mav.setViewName("index");
 		mav.addObject("title","Hello page");
 		mav.addObject("msg","sorry, error is occored...");
